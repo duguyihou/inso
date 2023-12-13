@@ -11,6 +11,7 @@
 		20164B432B29B9DB00F107A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20164B422B29B9DB00F107A1 /* ContentView.swift */; };
 		20164B452B29B9DC00F107A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20164B442B29B9DC00F107A1 /* Assets.xcassets */; };
 		20164B492B29B9DC00F107A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20164B482B29B9DC00F107A1 /* Preview Assets.xcassets */; };
+		20D4F1332B29BDDB006B9AA1 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 20D4F1322B29BDDB006B9AA1 /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		20164B442B29B9DC00F107A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20164B462B29B9DC00F107A1 /* inso.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = inso.entitlements; sourceTree = "<group>"; };
 		20164B482B29B9DC00F107A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		20D4F1322B29BDDB006B9AA1 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +38,7 @@
 		20164B342B29B9DB00F107A1 = {
 			isa = PBXGroup;
 			children = (
+				20D4F1322B29BDDB006B9AA1 /* .swiftlint.yml */,
 				20164B3F2B29B9DB00F107A1 /* inso */,
 				20164B3E2B29B9DB00F107A1 /* Products */,
 			);
@@ -85,6 +88,8 @@
 			dependencies = (
 			);
 			name = inso;
+			packageProductDependencies = (
+			);
 			productName = inso;
 			productReference = 20164B3D2B29B9DB00F107A1 /* inso.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +118,9 @@
 				Base,
 			);
 			mainGroup = 20164B342B29B9DB00F107A1;
+			packageReferences = (
+				20D4F12D2B29BD63006B9AA1 /* XCRemoteSwiftPackageReference "SwiftLint" */,
+			);
 			productRefGroup = 20164B3E2B29B9DB00F107A1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +135,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20D4F1332B29BDDB006B9AA1 /* .swiftlint.yml in Resources */,
 				20164B492B29B9DC00F107A1 /* Preview Assets.xcassets in Resources */,
 				20164B452B29B9DC00F107A1 /* Assets.xcassets in Resources */,
 			);
@@ -355,6 +364,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		20D4F12D2B29BD63006B9AA1 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.54.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 20164B352B29B9DB00F107A1 /* Project object */;
 }
